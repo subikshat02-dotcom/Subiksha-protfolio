@@ -1,0 +1,430 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subiksha T | Software Developer Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #080e1c;
+    color: #ffffff;
+    line-height: 1.7;
+}
+
+:root {
+    --blue: #38bdf8;
+    --dark: #101a2e;
+    --muted: #a8b5ca;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #0b1425;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid #23344d;
+}
+
+.logo {
+    color: var(--blue);
+    font-size: 23px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: var(--blue);
+}
+
+section {
+    padding: 85px 10%;
+}
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin: 12px 0;
+}
+
+.hero h1 span {
+    color: var(--blue);
+}
+
+.hero h3 {
+    color: var(--blue);
+    font-size: 22px;
+}
+
+.hero p {
+    color: var(--muted);
+    margin: 20px 0;
+}
+
+.profile {
+    width: 260px;
+    height: 300px;
+    border-radius: 25px;
+    border: 3px solid var(--blue);
+    object-fit: cover;
+    background: var(--dark);
+    box-shadow: 0 0 35px #38bdf833;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--blue);
+    color: #08111f;
+    padding: 12px 24px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 8px 8px 8px 0;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+.outline {
+    background: transparent;
+    color: var(--blue);
+    border: 1px solid var(--blue);
+}
+
+.section-title {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-title span {
+    color: var(--blue);
+}
+
+.about, .project, .education, .contact {
+    background: #0d1729;
+    border-radius: 15px;
+    padding: 30px;
+    border: 1px solid #23344d;
+}
+
+.about p {
+    color: var(--muted);
+    text-align: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 18px;
+}
+
+.skill {
+    background: var(--dark);
+    border: 1px solid #233c5b;
+    padding: 22px;
+    text-align: center;
+    border-radius: 12px;
+    color: var(--blue);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+    border-color: var(--blue);
+}
+
+.project h3 {
+    color: var(--blue);
+    font-size: 23px;
+}
+
+.project p {
+    color: var(--muted);
+    margin: 15px 0;
+}
+
+.project-tag {
+    display: inline-block;
+    background: #172b45;
+    color: var(--blue);
+    padding: 5px 12px;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 13px;
+}
+
+.education p, .contact p {
+    color: var(--muted);
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: var(--muted);
+    border-top: 1px solid #23344d;
+}
+
+@media(max-width: 750px) {
+    nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 12px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 55px;
+    }
+
+    .hero h1 {
+        font-size: 37px;
+    }
+
+    .profile {
+        width: 210px;
+        height: 240px;
+    }
+
+    section {
+        padding: 60px 7%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <div class="logo">SUBIKSHA.</div>
+    <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HOME -->
+<section class="hero" id="home">
+
+    <div class="hero-content">
+        <h3>Hello, I'm</h3>
+        <h1>Subiksha <span>T.</span></h1>
+
+        <h3>Aspiring Software Developer</h3>
+
+        <p>
+            B.Tech Information Technology student at
+            KCG College of Technology, Chennai.
+            Passionate about programming, software development
+            and exploring emerging technologies.
+        </p>
+
+        <a href="#projects" class="btn">View My Projects</a>
+
+        <a href="https://www.linkedin.com/in/subiksha-t-211545450"
+           target="_blank" rel="noopener noreferrer"
+           class="btn outline">LinkedIn</a>
+    </div>
+
+    <img src="profile.jpg"
+         alt="Subiksha profile photo"
+         class="profile">
+
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+
+    <h2 class="section-title">About <span>Me</span></h2>
+
+    <div class="about">
+        <p>
+            I am a second-year B.Tech Information Technology student
+            at KCG College of Technology, Chennai.
+            I am interested in software development, programming
+            and emerging technologies.
+
+            I enjoy learning new technical concepts,
+            developing projects and improving my problem-solving skills.
+            My goal is to grow as a software developer
+            through practical experience and continuous learning.
+        </p>
+    </div>
+
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+
+    <h2 class="section-title">Technical <span>Skills</span></h2>
+
+    <div class="skills-grid">
+        <div class="skill">C Programming</div>
+        <div class="skill">Python</div>
+        <div class="skill">Java</div>
+        <div class="skill">GitHub</div>
+    </div>
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+
+    <h2 class="section-title">My <span>Projects</span></h2>
+
+    <div class="project">
+
+        <h3>LoyaltyChain</h3>
+
+        <h4>Blockchain-Based Loyalty Ledger</h4>
+
+        <p>
+            LoyaltyChain is a blockchain-based project focused
+            on maintaining loyalty points through a transparent
+            and reliable digital ledger.
+
+            The project explores the use of blockchain technology
+            in digital loyalty point management.
+        </p>
+
+        <div>
+            <span class="project-tag">Blockchain</span>
+            <span class="project-tag">Programming</span>
+            <span class="project-tag">GitHub</span>
+        </div>
+
+        <br>
+
+        <a href="https://github.com/subikshat02-dotcom/LoyaltyChain-Blockchain-Loyalty-Ledger"
+           target="_blank" rel="noopener noreferrer"
+           class="btn">
+           View GitHub Project
+        </a>
+
+    </div>
+
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+
+    <h2 class="section-title">My <span>Education</span></h2>
+
+    <div class="education">
+        <h3>B.Tech – Information Technology</h3>
+        <p>KCG College of Technology</p>
+        <p>Chennai, Tamil Nadu, India</p>
+        <p>Currently pursuing Second Year</p>
+    </div>
+
+    <br>
+
+    <div class="education">
+        <h3>Membership</h3>
+        <p>Institution of Engineering and Technology (IET) Member</p>
+    </div>
+
+</section>
+
+<!-- LANGUAGES -->
+<section id="languages">
+
+    <h2 class="section-title">Languages</h2>
+
+    <div class="skills-grid">
+        <div class="skill">English</div>
+        <div class="skill">Tamil</div>
+        <div class="skill">Hindi</div>
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+
+    <h2 class="section-title">Contact <span>Me</span></h2>
+
+    <div class="contact">
+
+        <p><strong>Email:</strong>
+            <a href="mailto:subikshat02@gmail.com"
+               style="color:#38bdf8">
+               subikshat02@gmail.com
+            </a>
+        </p>
+
+        <p><strong>GitHub:</strong>
+            <a href="https://github.com/subikshat02-dotcom"
+               target="_blank" rel="noopener noreferrer"
+               style="color:#38bdf8">
+               GitHub Profile
+            </a>
+        </p>
+
+        <p><strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/subiksha-t-211545450"
+               target="_blank" rel="noopener noreferrer"
+               style="color:#38bdf8">
+               LinkedIn Profile
+            </a>
+        </p>
+
+        <a href="mailto:subikshat02@gmail.com" class="btn">
+            Send Me an Email
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Subiksha T. All Rights Reserved.</p>
+    <p>Designed with passion for technology.</p>
+</footer>
+
+</body>
+</html>
